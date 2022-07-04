@@ -10,7 +10,7 @@ public class Simulation : CellularAutomata.CellularAutomata
 {
     private CellHandler _cellHandler = null!;
     
-    public Simulation() : base(256, 256, 1) 
+    public Simulation() : base(512, 512, 16) 
     {
     }
 
