@@ -1,7 +1,6 @@
 ﻿using CellularAutomata.Cells;
 using CellularAutomata.Events;
 using CellularAutomata.Example;
-using CellularAutomata.World;
 using Microsoft.Xna.Framework;
 using Simulation.Cells;
 
@@ -11,9 +10,8 @@ public class Simulation : CellularAutomata.CellularAutomata
 {
     private CellHandler _cellHandler = null!;
     
-    public Simulation() : base(128, 128, 8)
+    public Simulation() : base(1024, 1024, 1) 
     {
-        WorldEvents.RemoveDefaultHandlers();
     }
 
     protected override void Initialize()
